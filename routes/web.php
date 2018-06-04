@@ -19,3 +19,6 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/vue', function (){
+    return view('vue');
+});
